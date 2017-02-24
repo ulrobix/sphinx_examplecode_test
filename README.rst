@@ -45,7 +45,7 @@ Source would look something like this::
 
 This will create an output like this:
 
-.. image:: https://raw.githubusercontent.com/ulrobix/sphinx_examplecode_testmaster/_static/example.png
+.. image:: https://raw.githubusercontent.com/ulrobix/sphinx_examplecode_test/master/_static/example.png
    :alt: Example how it looks like as generated HTML
 
 Example with columns
@@ -74,7 +74,7 @@ Source would look something like this::
 
 This will create an output like this:
 
-.. image:: https://raw.githubusercontent.com/ulrobix/sphinx_examplecode_testmaster/_static/example_cols.png
+.. image:: https://raw.githubusercontent.com/ulrobix/sphinx_examplecode_test/master/_static/example_cols.png
    :alt: Example how it looks like as generated HTML
 
 Install
