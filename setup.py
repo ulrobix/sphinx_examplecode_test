@@ -3,23 +3,23 @@
 from setuptools import setup, find_packages
 
 long_desc = '''
-This package contains the examplecode Sphinx extension.
+This package contains the contenttabs Sphinx extension.
 
-This extension adds support for a multiple language code block
+This extension adds support for a multiple content block
 widget to Sphinx.
 '''
 
 requires = ['Sphinx>=1.0']
 
 setup(
-    name='sphinxcontrib-examplecode',
+    name='sphinxcontrib-contenttabs',
     version='0.1.0',
-    url='http://bitbucket.org/birkenfeld/sphinx-contrib',
-    download_url='http://pypi.python.org/pypi/sphinxcontrib-examplecode',
+    url='https://github.com/ulrobix/sphinx_contenttabs',
+    download_url='http://pypi.python.org/pypi/sphinxcontrib-contenttabs',
     license='BSD',
-    author='Serge Domkowski',
-    author_email='sergedomk@gmail.com',
-    description='Sphinx "examplecode" extension',
+    author='Robert Khaliullov',
+    author_email='ulrobix@gmail.com',
+    description='Sphinx "contenttabs" extension',
     long_description=long_desc,
     zip_safe=False,
     classifiers=[

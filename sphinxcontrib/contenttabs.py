@@ -1,36 +1,59 @@
 # -*- coding: utf-8 -*-
 """
-Examplecode specs
+Content tabs specs
 =================
 """
 import os
-from docutils.parsers.rst import Directive
+from docutils.parsers.rst import Directive, directives
 from docutils import nodes
 from sphinx.util.osutil import copyfile
 
 
-CSS_FILE = 'examplecode.css'
-JS_FILE = 'examplecode.js'
+CSS_FILE = 'contenttabs.css'
+JS_FILE = 'contenttabs.js'
 
 
 class ExampleCodeDirective(Directive):
     """
-    This directive is intended to be used to contain a group of 
-    code blocks which are beingused to show code examples in many different
-    languages. When rendered as HTML the the examples will all be rolled up
-    into a single display area with buttons to select between the different
-    languages.
+    It's container directive with content-tabs class
     """
 
     has_content = True
+    optional_arguments = 1
 
     def run(self):
         self.assert_has_content()
         text = '\n'.join(self.content)
         node = nodes.container(text)
-        node['classes'].append('example-code')
+        node['classes'].append('content-tabs')
+
+        if self.arguments and self.arguments[0]:
+            node['classes'].append(self.arguments[0])
+
         self.add_name(node)
         self.state.nested_parse(self.content, self.content_offset, node)
+        return [node]
+
+
+class ExampleCodeTabDirective(Directive):
+    has_content = True
+    option_spec = {'title': directives.unchanged}
+    required_arguments = 1
+
+    def run(self):
+        self.assert_has_content()
+        text = '\n'.join(self.content)
+        node = nodes.container(text)
+        node['ids'].append('tab-%s' % self.arguments[0])
+        node['classes'].append('tab-content')
+
+        par = nodes.paragraph(text=self.options["title"])
+        par['classes'].append('tab-title')
+        node += par
+
+        self.add_name(node)
+        self.state.nested_parse(self.content, self.content_offset, node)
+
         return [node]
 
 
@@ -51,7 +74,7 @@ def copy_assets(app, exception):
     app.info('done')
 
 def setup(app):
-    app.add_directive('example-code',  ExampleCodeDirective)
+    app.add_directive('content-tabs',  ExampleCodeDirective)
+    app.add_directive('tab-container', ExampleCodeTabDirective)
     app.connect('builder-inited', add_assets)
     app.connect('build-finished', copy_assets)
-
