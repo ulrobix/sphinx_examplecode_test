@@ -8,7 +8,7 @@ Column content
     Use `container` or another directive with classes `left-col` / `right-col` to
     display the content in two columns.
 
-    .. note:: Supported only **sphinx_rtd_theme**
+    .. note:: Supported only **sphinx_rtd_theme**. The right column displays only the windows width more than 1300 px.
 
     Full example::
 
