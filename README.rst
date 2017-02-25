@@ -9,14 +9,7 @@ This is a modified fork of Serge Domkowski's `examplecode extension
 for Sphinx.
 
 
-About
-=====
-
-This is a simple extension that, when rendered as HTML UI widgets:
-
-- Content tab
-- Column content
-- Toggle header
+.. include:: docs/about.rst
 
 
 Example
@@ -24,22 +17,9 @@ Example
 
 `Read The Docs <http://sphinx-examplecode-test.readthedocs.io/en/latest/example1.html>`_
 
-Installation
-------------
 
-.. code-block:: bash
+.. include:: docs/installation.rst
 
-    $ pip install sphinxcontrib-contentui
-
-
-Enabling the extension in Sphinx
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Just add sphinxcontrib.contentui to the list of extensions in the **conf.py** file. For example:
-
-.. code-block:: bash
-
-    extensions = ['sphinxcontrib.contentui']
 
 Documentation
 -------------
