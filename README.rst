@@ -45,7 +45,7 @@ Source would look something like this::
 
 This will create an output like this:
 
-.. image:: https://raw.githubusercontent.com/ulrobix/sphinx_examplecode_test/master/_static/example.png
+.. image:: https://raw.githubusercontent.com/ulrobix/sphinx_examplecode_test/master/docs/_static/example.png
    :alt: Example how it looks like as generated HTML
 
 Example with columns
@@ -74,7 +74,7 @@ Source would look something like this::
 
 This will create an output like this:
 
-.. image:: https://raw.githubusercontent.com/ulrobix/sphinx_examplecode_test/master/_static/example_cols.png
+.. image:: https://raw.githubusercontent.com/ulrobix/sphinx_examplecode_test/master/docs/_static/example_cols.png
    :alt: Example how it looks like as generated HTML
 
 Install
@@ -95,10 +95,6 @@ Just add ``sphinxcontrib.contenttabs`` to the list of extensions in the
 
     extensions = ['sphinxcontrib.contenttabs']
 
-TODO
-====
-
-* Add color configuration options for buttons.
 
 .. Links:
 .. _Sphinx: http://sphinx.pocoo.org/`

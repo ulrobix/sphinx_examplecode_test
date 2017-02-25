@@ -3,23 +3,20 @@
 from setuptools import setup, find_packages
 
 long_desc = '''
-This package contains the contenttabs Sphinx extension.
-
-This extension adds support for a multiple content block
-widget to Sphinx.
+This package contains the contentui Sphinx extension.
 '''
 
 requires = ['Sphinx>=1.0']
 
 setup(
-    name='sphinxcontrib-contenttabs',
+    name='sphinxcontrib-contentui',
     version='0.1.0',
-    url='https://github.com/ulrobix/sphinx_contenttabs',
-    download_url='http://pypi.python.org/pypi/sphinxcontrib-contenttabs',
+    url='https://github.com/ulrobix/sphinx_contentui',
+    download_url='http://pypi.python.org/pypi/sphinxcontrib-contentui',
     license='BSD',
     author='Robert Khaliullov',
     author_email='ulrobix@gmail.com',
-    description='Sphinx "contenttabs" extension',
+    description='Sphinx "contentui" extension',
     long_description=long_desc,
     zip_safe=False,
     classifiers=[
