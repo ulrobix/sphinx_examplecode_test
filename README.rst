@@ -14,15 +14,15 @@ About
 
 This is a simple extension that is rendered as HTML widgets:
 
-- Content tab
-- Column content
-- Toggle header
+- `Content tab <http://sphinx-examplecode-test.readthedocs.io/en/latest/tabs.html>`_
+- `Column content <http://sphinx-examplecode-test.readthedocs.io/en/latest/columns.html>`_
+- `Toggle header <http://sphinx-examplecode-test.readthedocs.io/en/latest/toggle.html>`_
 
 
 Example
 -------
 
-`Read The Docs <http://sphinx-examplecode-test.readthedocs.io/en/latest/example1.html>`_
+`All in one Example <http://sphinx-examplecode-test.readthedocs.io/en/latest/example-all.html>`_
 
 
 Installation
