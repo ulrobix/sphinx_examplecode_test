@@ -1,3 +1,5 @@
+.. _example-all:
+
 All in one Example
 ------------------
 
