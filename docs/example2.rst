@@ -17,7 +17,7 @@ Example Tabs
         .. code-block:: python
 
             import my-api
-            my-api.signin('username', 'passwod')
+            my-api.signin('username', 'password')
 
 
     .. tab-container:: php
@@ -27,11 +27,11 @@ Example Tabs
 
         .. code-block:: php
 
-            \MyApi.signin()
+            MyApi.signin();
 
         .. rubric:: Example request
 
         .. code-block:: php
 
-            import my-api
-            \MyApi.signin('username', 'passwod')
+            include 'my-api';
+            MyApi.signin('username', 'password');

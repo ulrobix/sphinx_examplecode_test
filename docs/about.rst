@@ -1,7 +1,7 @@
 About
 =====
 
-This is a simple extension that, when rendered as HTML widgets:
+This is a simple extension that is rendered as HTML widgets:
 
 - Content tab
 - Column content
