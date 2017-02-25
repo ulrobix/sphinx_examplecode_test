@@ -7,7 +7,7 @@ Contentui extension for Sphinx
 
     about
     installation
-    example1
-    example2
-    example3
-    example4
+    tabs
+    columns
+    toggle
+    example-all

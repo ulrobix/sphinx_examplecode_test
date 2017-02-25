@@ -1,10 +1,45 @@
-Example Columns
----------------
+.. _toggle-header:
 
-.. container:: left-col
+Toggle headers
+--------------
 
-    .. rubric:: Content in left column
- 
+.. rst:directive:: .. toggle-header:: class
+
+Creates a header with toggled content. Optional attribute `class` adding
+css class for header paragraph.
+
+Full example::
+
+    .. toggle-header::
+        :header: Example 1 **Show/Hide Code**
+
+            Content for header
+
+
+It's render this:
+
+.. toggle-header::
+    :header: Example 1 **Show/Hide Code**
+
+    Content for header
+
+Generated HTML code:
+
+.. code-block:: html
+
+    <p class="toggle-header open">
+        Example <strong>Show/Hide Code</strong>
+    </p>
+    <div class="toggle-content docutils container">
+        Content for header
+    </div>
+
+More examples
+~~~~~~~~~~~~~
+
+.. toggle-header::
+    :header: Example 1 **Show/Hide Code**
+
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
     nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -12,9 +47,9 @@ Example Columns
     fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
     culpa qui officia deserunt mollit anim id est laborum
 
-.. container:: right-col
 
-    .. rubric:: Content in right column
+.. toggle-header:: rubric
+    :header: Example 2
 
     Sed ut perspiciatis, unde omnis iste natus error sit voluptatem
     accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae
@@ -42,4 +77,3 @@ Example Columns
     Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis
     voluptatibus maiores alias consequatur aut perferendis doloribus
     asperiores repellat.
-

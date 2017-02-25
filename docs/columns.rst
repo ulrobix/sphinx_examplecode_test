@@ -1,9 +1,30 @@
-Example Toggle headers
-----------------------
+.. _column-content:
 
-.. toggle-header::
-    :header: Example 1 **Show/Hide Code**
+Column content
+--------------
 
+.. container:: left-col
+
+    Use `container` or another directive with classes `left-col` / `right-col` to
+    display the content in two columns.
+
+    Full example::
+
+        .. container:: left-col
+
+            Left column text
+
+        .. container:: left-col
+
+            Right column text
+
+More examples
+~~~~~~~~~~~~~
+
+.. container:: left-col
+
+    .. rubric:: Content in left column
+ 
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
     nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -11,9 +32,9 @@ Example Toggle headers
     fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
     culpa qui officia deserunt mollit anim id est laborum
 
+.. container:: right-col
 
-.. toggle-header:: rubric
-    :header: Example 2
+    .. rubric:: Content in right column
 
     Sed ut perspiciatis, unde omnis iste natus error sit voluptatem
     accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae
@@ -41,3 +62,4 @@ Example Toggle headers
     Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis
     voluptatibus maiores alias consequatur aut perferendis doloribus
     asperiores repellat.
+
