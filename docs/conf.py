@@ -1,3 +1,3 @@
 master_doc = 'index'
-project = ''
+project = 'contentui extension for Sphinx'
 extensions = ['sphinxcontrib.contentui']

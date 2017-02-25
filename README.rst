@@ -1,8 +1,8 @@
 .. -*- restructuredtext -*-
 
-================================
-contenttabs extension for Sphinx
-================================
+==============================
+contentui extension for Sphinx
+==============================
 
 This is a modified fork of Serge Domkowski's `examplecode extension <https://bitbucket.org/birkenfeld/sphinx-contrib/src/7f39b7f255e34bfe588f0065a5d9709a7d8e7614/examplecode/?at=default>`_ for Sphinx.
 
@@ -27,17 +27,17 @@ Installation
 
 .. code-block:: bash
 
-    $ pip install sphinxcontrib-contenttabs
+    $ pip install sphinxcontrib-contentui
 
 
 Enabling the extension in Sphinx
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Just add sphinxcontrib.contenttabs to the list of extensions in the conf.py file. For example:
+Just add sphinxcontrib.contentui to the list of extensions in the conf.py file. For example:
 
 .. code-block:: bash
 
-    extensions = ['sphinxcontrib.contenttabs']
+    extensions = ['sphinxcontrib.contentui']
 
 Documentation
 -------------
