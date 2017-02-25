@@ -81,11 +81,15 @@ class ToggleDirective(Directive):
 
 
 def add_assets(app):
+    app.info('add_assets! ', nonl=True)
+
     app.add_stylesheet(CSS_FILE)
     app.add_javascript(JS_FILE)
 
 
 def copy_assets(app, exception):
+    app.info('copy_assets! app.builder.name = %s' % app.builder.name, nonl=True)
+
     if app.builder.name != 'html' or exception:
         return
     app.info('Copying contenttabs stylesheet/javascript... ', nonl=True)
