@@ -90,7 +90,7 @@ def add_assets(app):
 def copy_assets(app, exception):
     app.info('copy_assets! app.builder.name = %s' % app.builder.name, nonl=True)
 
-    if app.builder.name != 'html' or exception:
+    if app.builder.name not in ['html', 'epub'] or exception:
         return
     app.info('Copying contenttabs stylesheet/javascript... ', nonl=True)
     dest = os.path.join(app.builder.outdir, '_static', CSS_FILE)
