@@ -8,6 +8,8 @@ Column content
     Use `container` or another directive with classes `left-col` / `right-col` to
     display the content in two columns.
 
+    .. note:: Supported only **sphinx_rtd_theme**
+
     Full example::
 
         .. container:: left-col
