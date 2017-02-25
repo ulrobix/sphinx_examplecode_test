@@ -1,7 +1,7 @@
 .. -*- restructuredtext -*-
 
 ==============================
-contentui extension for Sphinx
+Contentui extension for Sphinx
 ==============================
 
 This is a modified fork of Serge Domkowski's `examplecode extension <https://bitbucket.org/birkenfeld/sphinx-contrib/src/7f39b7f255e34bfe588f0065a5d9709a7d8e7614/examplecode/?at=default>`_ for Sphinx.
@@ -10,7 +10,7 @@ This is a modified fork of Serge Domkowski's `examplecode extension <https://bit
 About
 =====
 
-This is a simple extension that, when rendered as HTML widgets:
+This is a simple extension that, when rendered as HTML UI widgets:
 
 - Content tab
 - Column content

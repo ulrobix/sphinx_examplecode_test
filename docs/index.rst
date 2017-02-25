@@ -1,6 +1,6 @@
-
-sphinxcontrib-contentui
-=======================
+==============================
+Contentui extension for Sphinx
+==============================
 
 .. toctree::
     :maxdepth: 2

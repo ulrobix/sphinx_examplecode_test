@@ -87,7 +87,7 @@ def add_assets(app):
 def copy_assets(app, exception):
     if app.builder.name not in ['html', 'readthedocs'] or exception:
         return
-    app.info('Copying contenttabs stylesheet/javascript... ', nonl=True)
+    app.info('Copying contentui stylesheet/javascript... ', nonl=True)
     dest = os.path.join(app.builder.outdir, '_static', CSS_FILE)
     source = os.path.join(os.path.abspath(os.path.dirname(__file__)), CSS_FILE)
     copyfile(source, dest)
