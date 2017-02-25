@@ -4,96 +4,46 @@
 contenttabs extension for Sphinx
 ================================
 
-:author: Robert Khaliullov <ulrobix@gmail.com>
+This is a modified fork of Serge Domkowski's `examplecode extension <https://bitbucket.org/birkenfeld/sphinx-contrib/src/7f39b7f255e34bfe588f0065a5d9709a7d8e7614/examplecode/?at=default>`_ for Sphinx.
 
 
 About
 =====
 
-This is a simple extension that, when rendered as HTML, will fold multiple
-code blocks containing different programming languages into a single block
-which can be toggled from one to another using buttons.
-
-It's intended to be used for displaying example code in multiple languages
-(e.g., client code for accessing an API).
-
-This extension adds the ``content-tabs`` directive which adds a class to
-a container wrapping the code blocks that should be folded. The class allows
-the included Javascript and CSS to render the folded block and buttons.
-
-Quick Example
--------------
-
-Source would look something like this::
-
-    .. content-tabs::
-
-        .. tab-container:: python
-            :title: Python
-
-            .. code-block:: python
-
-                import my-api
-
-        .. tab-container:: ruby
-            :title: Ruby
-
-            .. code-block:: ruby
-
-                require 'my-api'
+This is a simple extension that, when rendered as HTML widgets:
+- Content tab
+- Column content
+- Toggle header
 
 
-This will create an output like this:
+Example
+-------
 
-.. image:: https://raw.githubusercontent.com/ulrobix/sphinx_examplecode_test/master/docs/_static/example.png
-   :alt: Example how it looks like as generated HTML
+`Read The Docs <http://sphinx-examplecode-test.readthedocs.io/en/latest/example1.html>`_
 
-Example with columns
---------------------
+Installation
+------------
 
-Source would look something like this::
+.. code-block:: bash
 
-    .. container:: left-col
+    $ pip install sphinxcontrib-contenttabs
 
 
-    .. container:: content-tabs right-col
+Enabling the extension in Sphinx
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-        .. tab-container:: python
-            :title: Python
+Just add sphinxcontrib.contenttabs to the list of extensions in the conf.py file. For example:
 
-            .. code-block:: python
-
-                import my-api
-
-        .. tab-container:: ruby
-            :title: Ruby
-
-            .. code-block:: ruby
-
-                require 'my-api'
-
-This will create an output like this:
-
-.. image:: https://raw.githubusercontent.com/ulrobix/sphinx_examplecode_test/master/docs/_static/example_cols.png
-   :alt: Example how it looks like as generated HTML
-
-Install
-=======
-
-From source (tar.gz or checkout)
---------------------------------
-
-Unpack the archive, enter the sphinxcontrib-contenttabs directory and run::
-
-    python setup.py install
-
-Enabling the extension in Sphinx_
----------------------------------
-
-Just add ``sphinxcontrib.contenttabs`` to the list of extensions in the
-``conf.py`` file. For example::
+.. code-block:: bash
 
     extensions = ['sphinxcontrib.contenttabs']
+
+Documentation
+-------------
+
+Full documentation for end users can be found in the "docs" folder.
+
+It is also available online on `Read The Docs <http://sphinx-examplecode-test.readthedocs.io/en/latest/>`_
 
 
 .. Links:

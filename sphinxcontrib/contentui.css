@@ -23,13 +23,13 @@
         clear: both;
     }
 
-    .left-col {
+    .left-col.container {
         float: left;
         width: 50%;
         margin-right: 4%;
     }
 
-    .right-col {
+    .right-col.container {
         float: left;
         width: 45%;
     }
@@ -69,6 +69,11 @@
 
 .toggle-header.open:after {
     content: " ▲";
+}
+
+.toggle-content {
+    display: none;
+    margin-bottom: 20px;
 }
 
 /*

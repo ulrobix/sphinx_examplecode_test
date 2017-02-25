@@ -1,18 +1,37 @@
-Example 2
----------
+Example Tabs
+------------
 
-.. container:: content-tabs
+.. content-tabs::
 
     .. tab-container:: python
         :title: Python
 
+        .. rubric:: Definition
+
+        .. code-block:: python
+
+            my-api.signin()
+
+        .. rubric:: Example request
+
         .. code-block:: python
 
             import my-api
+            my-api.signin('username', 'passwod')
 
-    .. tab-container:: ruby
-        :title: Ruby
 
-        .. code-block:: ruby
+    .. tab-container:: php
+        :title: PHP
 
-            require 'my-api'
+        .. rubric:: Definition
+
+        .. code-block:: php
+
+            \MyApi.signin()
+
+        .. rubric:: Example request
+
+        .. code-block:: php
+
+            import my-api
+            \MyApi.signin('username', 'passwod')
