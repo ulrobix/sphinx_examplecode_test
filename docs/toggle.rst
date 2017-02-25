@@ -6,7 +6,8 @@ Toggle headers
 .. rst:directive:: .. toggle-header:: class
 
 Creates a header with toggled content. Optional attribute `class` adding
-css class for header paragraph.
+css class for header paragraph. Required option `header` set text of
+header.
 
 Full example::
 

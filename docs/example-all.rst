@@ -13,7 +13,6 @@ All in one Example
         fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
         culpa qui officia deserunt mollit anim id est laborum
 
-
     .. toggle-header:: rubric
         :header: Example 2
 
@@ -62,7 +61,6 @@ All in one Example
             import my-api
             my-api.signin('username', 'password')
 
-
     .. tab-container:: php
         :title: PHP
 
@@ -70,14 +68,14 @@ All in one Example
 
         .. code-block:: php
 
-            MyApi.signin();
+            MyApi::signin();
 
         .. rubric:: Example request
 
         .. code-block:: php
 
             include 'my-api';
-            MyApi.signin('username', 'password');
+            MyApi::signin('username', 'password');
 
 Additional
 ~~~~~~~~~~
